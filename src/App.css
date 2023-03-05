@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+/* Set the height of the body to fill the entire viewport */
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Define the style for the box */
+.box {
+  width: 320px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Define the style for the heading */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Define the style for the dark mode checkbox */
+.checkbox {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.checkbox label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 8px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
 }
+
+.checkbox input[type="checkbox"]:checked {
+  background-color: #333;
+}
+
+.checkbox input[type="checkbox"]:hover {
+  background-color: #f2f2f2;
+}
+
+/* Define the style for the dark mode */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode h1 {
+  color: #fff;
+}
+.new-quote-button {
+  background-color: #333;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+.mahe{
+  color: aqua;
+  padding-left: 10px;
+}
+.bird{
+  color: aqua;
+  size: 2cm;
+  
+  padding-left: 30px;
+}
+
